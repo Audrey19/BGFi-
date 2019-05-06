@@ -307,8 +307,11 @@ header {
 section {
   background-color: #2A3865; }
   section .menu_secondary {
+    text-align: center;
     width: 80%;
-    margin: auto; }
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px; }
     @media only screen and (min-width: 768px) {
       section .menu_secondary {
         display: -webkit-flex;
@@ -326,12 +329,13 @@ section {
     section .menu_secondary img {
       width: 40px; }
     section .menu_secondary .menu-footer-container {
-      width: 50%; }
+      width: 100%; }
       section .menu_secondary .menu-footer-container .menu {
         padding: 0;
         list-style: none; }
         @media only screen and (min-width: 768px) {
           section .menu_secondary .menu-footer-container .menu {
+            width: 65%;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
@@ -346,44 +350,53 @@ section {
           color: #FFF;
           font-size: 12px; }
   section .menu_ternary {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     border-top: 2px solid #424E72; }
-    @media only screen and (min-width: 768px) {
-      section .menu_ternary {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center; } }
-    section .menu_ternary img {
-      width: 250px; }
-    section .menu_ternary .menu-privacy-container {
-      width: 10%; }
-      section .menu_ternary .menu-privacy-container .menu {
-        list-style: none; }
+    section .menu_ternary .menu_ternary_container {
+      width: 80%;
+      margin: auto; }
+      @media only screen and (min-width: 768px) {
+        section .menu_ternary .menu_ternary_container {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; } }
+      section .menu_ternary .menu_ternary_container img {
+        max-width: 200px;
+        display: block;
+        margin: auto; }
+      section .menu_ternary .menu_ternary_container .menu-privacy-container {
+        text-align: center; }
         @media only screen and (min-width: 768px) {
-          section .menu_ternary .menu-privacy-container .menu {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-            justify-content: space-between; } }
-        section .menu_ternary .menu-privacy-container .menu a {
-          text-decoration: none;
-          color: #FFF;
-          font-size: 12px; }
+          section .menu_ternary .menu_ternary_container .menu-privacy-container {
+            width: 10%; } }
+        section .menu_ternary .menu_ternary_container .menu-privacy-container .menu {
+          padding: 0;
+          list-style: none;
+          margin: auto; }
+          @media only screen and (min-width: 768px) {
+            section .menu_ternary .menu_ternary_container .menu-privacy-container .menu {
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+              justify-content: space-between; } }
+          section .menu_ternary .menu_ternary_container .menu-privacy-container .menu a {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 12px; }
 
 /* Layout */
 /* Vendor */

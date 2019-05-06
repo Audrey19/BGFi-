@@ -1,8 +1,12 @@
 section{
 background-color:$primaryColor;
+
     .menu_secondary{
+        text-align: center;
         width: 80%;
         margin: auto;
+        padding-top: 60px;
+        padding-bottom: 60px; 
         @include responsive(tablet) {
             display: flex;
             flex-direction: row;
@@ -13,10 +17,11 @@ background-color:$primaryColor;
             width:40px;
         }
         .menu-footer-container{
-            width: 50%;
+            width: 100%;
             .menu{
                 padding: 0;
                 @include responsive(tablet) {
+                    width: 65%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -31,31 +36,42 @@ background-color:$primaryColor;
         }
     }
     .menu_ternary{
+        width: 100%;
+        border-top: 2px solid $ternaryColor;
+        .menu_ternary_container{
         width: 80%;
         margin: auto;
-        border-top: 2px solid $ternaryColor;
         @include responsive(tablet) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items:center;
         }
-        img{
-            width:250px;
-        }
-        .menu-privacy-container{
-            width: 10%;
-            .menu{
+            img{
+                max-width:200px;
+                display: block;
+                margin: auto;
+            }
+            .menu-privacy-container{
+                text-align: center;
                 @include responsive(tablet) {
+                    width: 10%;
+                }
+                .menu{
+                    padding: 0;
+                    list-style: none;
+                    margin: auto;
+                    @include responsive(tablet) {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                }
-                list-style: none;
-                a{
-                    text-decoration: none;
-                    color:$white;
-                    font-size: 12px;
+            
+                    }
+                    a{
+                        text-decoration: none;
+                        color:$white;
+                        font-size: 12px;
+                    }
                 }
             }
         }

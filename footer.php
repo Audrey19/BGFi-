@@ -6,12 +6,14 @@
 	<section>
 		<div class="menu_secondary">
 			<?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'secondary' )); ?> 
-			<img  class="linkedin" src="<?php echo get_bloginfo('template_url') ?>/assets/images/linkedin.png" alt="linkedin"/>
+			<a href="https://www.linkedin.com/company/bgfi-groupe/"><img  class="linkedin" src="<?php echo get_bloginfo('template_url') ?>/assets/images/linkedin.png" alt="linkedin"/></a>
 		</div>
 		
 		<div class="menu_ternary">
-			<img  class="ptc" src="<?php echo get_bloginfo('template_url') ?>/assets/images/ptc_logo.png" alt="logo_ptc"/>
-			<?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'ternary' )); ?> 
+			<div class="menu_ternary_container">
+				<a href="https://www.positivethinkingcompany.com/"><img  class="ptc" src="<?php echo get_bloginfo('template_url') ?>/assets/images/ptc_logo.png" alt="logo_ptc"/></a>
+				<?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'ternary' )); ?> 
+			</div>
 		</div>
 	</section>
 </body>
