@@ -1,0 +1,28 @@
+//SITE SETTINGS 
+
+$primaryColor:#2A3865;
+$secondaryColor: #0c101e;
+$ternaryColor:#424E72;
+$black:#000;
+$white:#FFF;
+
+$primaryFont:'Lato', sans-serif;
+
+$max-width:1160px;
+$max-width-alt:900px;
+
+$break-small: 768px;
+$break-medium: 1025px;
+
+@mixin responsive($media) {
+    @if $media == tablet {
+      @media only screen and (min-width: $break-small) { @content; }
+    }
+    @else if $media == tablet-landscape {
+      @media only screen and (min-width: $break-small) and (orientation: landscape) { @content; }
+    }
+    @else if $media == laptop {
+      @media only screen and (min-width: $break-medium) { @content; }
+    }
+  }
+  /*@include responsive(tablet) { }*/

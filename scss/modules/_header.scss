@@ -1,0 +1,43 @@
+header{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin: auto;
+    .logo{
+        display: block;
+        width:115px;
+        height: auto;
+
+    }
+    .container_menu{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end ;
+        align-items:center;
+        .searchbar{
+            margin-left: 60px;
+        }
+        .menu-navmenu-container{
+            display: none;
+            @include responsive(tablet) {
+                display: block;
+                width: 80%;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between ;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color:$black;
+                    font-size: 12px;
+
+                }
+            }
+        }
+    }
+}
