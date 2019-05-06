@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php bloginfo('title'); ?>BGFi</title>
+    <title><?php bloginfo('title'); ?></title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico"/>
