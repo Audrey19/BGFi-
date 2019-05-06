@@ -244,11 +244,13 @@ template {
 /*@include responsive(tablet) { }*/
 body {
   padding: 0px;
-  background-color: #F2F3F3; }
+  background-color: white; }
 
 /* Modules */
 header {
   width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -304,16 +306,16 @@ header {
           color: #000;
           font-size: 12px; }
 
-section {
+.container_footer {
   background-color: #2A3865; }
-  section .menu_secondary {
+  .container_footer .menu_secondary {
     text-align: center;
     width: 80%;
     margin: auto;
     padding-top: 60px;
     padding-bottom: 60px; }
     @media only screen and (min-width: 768px) {
-      section .menu_secondary {
+      .container_footer .menu_secondary {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -326,15 +328,15 @@ section {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center; } }
-    section .menu_secondary img {
+    .container_footer .menu_secondary img {
       width: 40px; }
-    section .menu_secondary .menu-footer-container {
+    .container_footer .menu_secondary .menu-footer-container {
       width: 100%; }
-      section .menu_secondary .menu-footer-container .menu {
+      .container_footer .menu_secondary .menu-footer-container .menu {
         padding: 0;
         list-style: none; }
         @media only screen and (min-width: 768px) {
-          section .menu_secondary .menu-footer-container .menu {
+          .container_footer .menu_secondary .menu-footer-container .menu {
             width: 65%;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -345,18 +347,18 @@ section {
             -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
             justify-content: space-between; } }
-        section .menu_secondary .menu-footer-container .menu a {
+        .container_footer .menu_secondary .menu-footer-container .menu a {
           text-decoration: none;
           color: #FFF;
           font-size: 12px; }
-  section .menu_ternary {
+  .container_footer .menu_ternary {
     width: 100%;
     border-top: 2px solid #424E72; }
-    section .menu_ternary .menu_ternary_container {
+    .container_footer .menu_ternary .menu_ternary_container {
       width: 80%;
       margin: auto; }
       @media only screen and (min-width: 768px) {
-        section .menu_ternary .menu_ternary_container {
+        .container_footer .menu_ternary .menu_ternary_container {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
@@ -369,21 +371,21 @@ section {
           -webkit-align-items: center;
           -ms-flex-align: center;
           align-items: center; } }
-      section .menu_ternary .menu_ternary_container img {
+      .container_footer .menu_ternary .menu_ternary_container img {
         max-width: 200px;
         display: block;
         margin: auto; }
-      section .menu_ternary .menu_ternary_container .menu-privacy-container {
+      .container_footer .menu_ternary .menu_ternary_container .menu-privacy-container {
         text-align: center; }
         @media only screen and (min-width: 768px) {
-          section .menu_ternary .menu_ternary_container .menu-privacy-container {
+          .container_footer .menu_ternary .menu_ternary_container .menu-privacy-container {
             width: 10%; } }
-        section .menu_ternary .menu_ternary_container .menu-privacy-container .menu {
+        .container_footer .menu_ternary .menu_ternary_container .menu-privacy-container .menu {
           padding: 0;
           list-style: none;
           margin: auto; }
           @media only screen and (min-width: 768px) {
-            section .menu_ternary .menu_ternary_container .menu-privacy-container .menu {
+            .container_footer .menu_ternary .menu_ternary_container .menu-privacy-container .menu {
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
@@ -393,12 +395,139 @@ section {
               -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
               justify-content: space-between; } }
-          section .menu_ternary .menu_ternary_container .menu-privacy-container .menu a {
+          .container_footer .menu_ternary .menu_ternary_container .menu-privacy-container .menu a {
             text-decoration: none;
             color: #FFF;
             font-size: 12px; }
 
 /* Layout */
+.one {
+  background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b);
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  z-index: -5; }
+  .one .kenburns-top {
+    z-index: -3;
+    -webkit-animation: kenburns-top 160s ease-out both;
+    animation: kenburns-top 160s ease-out both; }
+    @media only screen and (min-width: 768px) {
+      .one .kenburns-top {
+        top: -150px;
+        position: absolute;
+        margin: auto;
+        width: 90%;
+        left: 5%; } }
+  .one .one_containeir_title {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%; }
+    @media only screen and (min-width: 768px) {
+      .one .one_containeir_title {
+        width: 40%; } }
+    .one .one_containeir_title h1 {
+      font-size: 48px;
+      color: #FFF;
+      font-weight: bold; }
+    .one .one_containeir_title p {
+      font-size: 20px;
+      color: #E8356B;
+      font-weight: bold; }
+    .one .one_containeir_title button {
+      background-color: #FE9075;
+      color: #FFF;
+      border: none;
+      padding: 13px 30px;
+      border-radius: 20px; }
+  .one .one_container_scroll {
+    margin-top: 270px;
+    text-align: center; }
+    .one .one_container_scroll p {
+      color: #FFF; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-4-17 12:5:53
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes kenburns-top 
+    0% {
+  -webkit-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+  -webkit-transform-origin: 50% 16%;
+  transform-origin: 50% 16%; }
+
+100% {
+  -webkit-transform: scale(1.25) translateY(-15px);
+  -ms-transform: scale(1.25) translateY(-15px);
+  transform: scale(1.25) translateY(-15px);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top; }
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top; } }
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%; }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top; } }
+
+.two {
+  width: 80%;
+  margin: 80px auto; }
+  @media only screen and (min-width: 768px) {
+    .two {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  .two .two_box {
+    text-align: center;
+    width: 20%; }
+    .two .two_box .two_box_image {
+      background-color: #F1F5F6;
+      border-radius: 50%;
+      width: 115px;
+      height: 115px;
+      margin: auto; }
+      .two .two_box .two_box_image img {
+        margin-top: 28px; }
+    .two .two_box h1 {
+      color: #E8356B;
+      font-size: 20px;
+      margin: 30px 0; }
+    .two .two_box p {
+      font-size: 15px;
+      line-height: 25px; }
+
 /* Vendor */
 #outdated {
   display: none;
