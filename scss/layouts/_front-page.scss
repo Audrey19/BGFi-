@@ -27,21 +27,19 @@
             width: 40%;
         }
         h1{
-            font-size: 48px;
+            font-size: 30px;
             color: $white;
-            font-weight: bold;
+            font-family: $primaryFont;
+            font-weight: 900;
+            @include responsive(tablet){
+            font-size: 48px;
+            }
         }
         p{
             font-size: 20px;
             color: $pink;
             font-weight: bold;
-        }
-        button{
-            background-color:$orange;
-            color:$white;
-            border: none;
-            padding: 13px 30px;
-            border-radius: 20px;
+            font-family: $secondryFont;
         }
 
     }
@@ -50,6 +48,8 @@
         text-align: center;
         p{
             color:$white;
+            font-family: $secondryFont;
+
         }
     }
 }
@@ -103,7 +103,9 @@
     } 
     .two_box{
         text-align: center;
+        @include responsive(tablet){
         width: 20%;
+        }
         .two_box_image{
             background-color: $light-grey;
             border-radius: 50%;
@@ -118,18 +120,128 @@
             color:$pink;
             font-size: 20px;
             margin: 30px 0;
+            text-align: center;
+            font-family: $primaryFont;
         }
         p{
             font-size: 15px;
             line-height: 25px;
+            text-align: center;
+            font-family: $secondryFont;
+           
         }
     }
 }
     
+.three{
+    background-color: $primaryColor;
+    .three_container{
+        margin: auto;
+        width: 80%;
+        padding-top: 70px;
+        padding-bottom:200px;
+        @include responsive(tablet){
+        width: 40%;
+        }
+        h1{
+            color:$white;
+            font-size: 38px;
+            text-align: center;
+            font-family: $primaryFont;
+        }
+        p{
+            color:$ternaryColor;
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+            font-family: $secondryFont;
+        }
+    }
+   
+}
 
+.four{
+    margin: auto;
+    position: relative;
+    padding: 40px 0;
+    @include responsive(tablet){
+    height: 60vh;
+    }
+    .four_container{
+    @include responsive(tablet){
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        .four_container_box{
+        margin: 10px;
+        text-align: center;
+        img{
+            max-width: 100%;
+            @include responsive(tablet){
+               max-width: none;
+                }
+           
+        }
+           h1{
+               font-size: 24px;
+               text-align: center;
+               font-family: $primaryFont;
+           }
+        }
+    }
+}
 
+.five{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    border-top: 1px solid $grey;
+    @include responsive(tablet){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+        .five_container_box1{
+            @include responsive(tablet){
+            width:20%;
+            }
+            p{
+               font-size: 25px;
+               color:  $grey;
+               font-family: $secondryFont;
+               font-weight: bolder;
+               text-transform: uppercase;
+               text-align: center;
+               @include responsive(tablet){
+               padding-top: 55px;
+               }
+            }
+        }
+        .five_container_box2{
+            @include responsive(tablet){
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            }
+            .logos{
+            @include responsive(tablet){
+             flex: 25%;
+                }
+                img{
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+   
 
-
+}
 
 
 
