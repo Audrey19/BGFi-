@@ -1,0 +1,172 @@
+.data_menu{
+    background-color: $primaryColor;
+    width: 100%;
+    padding: 40px 0;
+    .menu-sub-menu-container{
+        margin: auto;
+        width: 70%;
+        .menu{
+            margin: 0;
+            list-style-type: none;
+            padding: 0;
+            @include responsive(tablet){
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .current_page_item {
+                a{
+                    color:$pink;
+                }
+            }
+            li{
+                flex-basis: 100%;
+                text-align: center;
+                @include responsive(tablet){
+                    border-right: 1px solid $secondaryColor;
+                } 
+            }
+            a{
+                    color:$white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-family: $secondryFont;
+                    font-weight: bold;
+                    max-width: 20px;
+                }
+        
+        }
+    }
+}
+
+
+
+.projet{
+    width:100%;
+    margin: 60px;
+    .projet_container{
+        text-align: center;
+        @include responsive(tablet){
+            padding: 10px 0;
+            background-color: $primaryColor;
+            width:50%;
+            border-radius: 60px;
+            margin: 60px auto;
+        }
+        h1{
+            color:$primaryColor;
+            font-size: 24px;
+            font-family: $secondryFont;
+            font-weight: lighter;
+            @include responsive(tablet){
+            color:$white;
+            }
+        }
+    }
+}
+
+
+
+.toggle{
+    width: 90%;
+    margin: 90px auto;
+    @include responsive(tablet){
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .toggle_left{
+        text-align: center;
+        @include responsive(tablet){
+            width: 40%;
+        }
+        .current{
+            color: $pink;
+        }
+    }
+    .toggle_right{
+        @include responsive(tablet){
+            width: 60%;
+        }
+        .container_toggle{
+            margin:20px;
+        }
+        .domain{
+            padding: 5px 20px;
+            background-color: $light-grey;
+            font-size: 20px;
+            font-family: $secondryFont;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            @include responsive(tablet){
+                padding: 15px 40px;
+                font-size: 32px;
+            }
+            .arrow-close{
+                display: block;
+                width: 15px;
+                height: 10px;
+            }
+            .arrow-open{
+                display:none;
+            }
+        }
+        .current{
+            background-color: $pink;
+            color:$white;
+        }
+        .sub-domain{
+            display: none;
+            padding: 0 30px;
+        }
+        .current{
+            display:block;
+            background-color: $pink;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+            padding-bottom: 30px;
+        
+            .sub-domain-item{
+                width: 100px;   
+                margin: 10px;
+                text-align: center;
+                font-size: 12px;
+                font-family: $secondryFont;
+                font-weight: bold;
+                .loupe{
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 20px; 
+                   
+                }
+            }
+            a{
+                width:100%;
+                background-color: $primaryColor;
+                color: $white;
+                font-size: 9px;
+                font-family: $secondryFont;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+
+            }
+            .arrow-close{
+               display:none;
+            }
+            .arrow-open{
+                display: block;
+                width: 15px;
+                height: 10px;
+            }
+        
+        }
+    }
+}
