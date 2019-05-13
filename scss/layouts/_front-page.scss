@@ -1,12 +1,16 @@
 
 .one{
     background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b),;
-    width:100vw;
+    width:100%;
     position: relative;
     overflow: hidden;
-    height: 80vh; 
+    height: 85vh; 
     z-index: -5;
+    @include responsive(tablet){
+        height: 80vh; 
+        }
     .kenburns-top {
+        overflow: hidden;
         z-index: -3;
        -webkit-animation: kenburns-top 160s ease-out both;
        animation: kenburns-top 160s ease-out both;
@@ -18,7 +22,7 @@
         left:5%;
         }
     }
-    .one_containeir_title{
+    .one_container_title{
         width: 80%;
         margin: auto;
         text-align: center;
@@ -37,14 +41,14 @@
         }
         p{
             font-size: 20px;
-            color: $pink;
-            font-weight: bold;
+            color: $grey;
+            line-height: 30px;
             font-family: $secondryFont;
         }
 
     }
     .one_container_scroll{
-        margin-top: 270px;
+        margin-top: 5%;
         text-align: center;
         p{
             color:$white;
@@ -141,7 +145,7 @@
         padding-top: 70px;
         padding-bottom:200px;
         @include responsive(tablet){
-        width: 40%;
+        width: 50%;
         }
         h1{
             color:$white;
@@ -150,7 +154,7 @@
             font-family: $primaryFont;
         }
         p{
-            color:$ternaryColor;
+            color:$grey;
             font-size: 16px;
             text-align: center;
             line-height: 25px;
@@ -165,7 +169,7 @@
     position: relative;
     padding: 40px 0;
     @include responsive(tablet){
-    height: 60vh;
+    height: 45vh;
     }
     .four_container{
     @include responsive(tablet){
@@ -199,7 +203,7 @@
 .five{
     width: 80%;
     margin: auto;
-    padding: 50px 0;
+    padding: 100px 0;
     border-top: 1px solid $grey;
     @include responsive(tablet){
     display: flex;

@@ -15,9 +15,14 @@
 @import "modules/header";
 @import "modules/footer";
 @import "modules/buttons";
+@import "modules/slick";
+@import "modules/slick-theme";
+
 
 /* Layout */
 @import "layouts/front-page";
+@import "layouts/apropos";
+@import "layouts/data&analytics";
 
 /* Vendor */
 @import "vendors/outdatedbrowser";

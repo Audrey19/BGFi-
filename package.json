@@ -25,5 +25,8 @@
     "gulp-sass": "*",
     "gulp-eslint": "*",
     "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

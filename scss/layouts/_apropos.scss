@@ -1,0 +1,241 @@
+.first_title{
+    font-size: 30px;
+    color: $pink;
+    font-family: $primaryFont;
+    text-align: center;
+    @include responsive(tablet){
+        font-size: 48px;
+    }  
+}
+
+
+
+.about_one{
+    background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b),;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    height: 70vh; 
+    z-index: -5;
+    @include responsive(tablet){
+        height: 80vh;
+    } 
+    .about_one_container{
+            width: 80%;
+            margin: auto;
+        h1{
+            color: white;
+            font-family: $secondryFont;
+            font-size: 30px;
+            padding-top: 50px; 
+            text-align: center;
+            @include responsive(tablet){
+                font-size: 48px;
+                padding-top: 150px; 
+                text-align: left;
+            }
+        }
+        .nasa{
+            overflow: hidden;
+            z-index: -3;
+           -webkit-animation: kenburns-top 160s ease-out both;
+           animation: kenburns-top 160s ease-out both;
+           @include responsive(tablet){
+            top:-150px;
+            position: absolute;
+            margin: auto;
+            width: 90%;
+            left:5%;
+            }
+        }
+    }
+}
+
+.about_two{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    @include responsive(tablet){
+        width: 70%;
+        padding: 70px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about_two_container_box{
+        text-align: center;
+        h1{
+            font-size: 72px;
+            font-family: $secondryFont;
+            color:$primaryColor;
+        }
+        p{
+            font-size: 24px;
+            font-family: $secondryFont;
+            color:$pink; 
+            font-weight: bolder;
+        }
+        @include responsive(tablet){
+            width: 20%;
+        }
+    }
+ 
+}
+
+.about_three{
+    margin-top: 100px;
+    h1{
+        font-size: 48px;
+        color: $pink;
+        font-family: $primaryFont;
+        font-weight: 900;
+        text-align: center;
+    }
+    .about_three_container{
+        width: 80%;
+        margin: 60px auto;
+        box-shadow: 7px 7px 15px $light-grey;
+        @include responsive(tablet){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 150px auto;
+        }
+        .about_three_container_image{
+            overflow: hidden;
+            @include responsive(tablet){
+                width: 50%;
+            }  
+        }
+        .about_three_container_content{
+            width: 90%;
+            text-align: center;
+            @include responsive(tablet){
+            width: 50%;
+            padding: 30px;
+            text-align: left;
+            }
+            h1{
+                font-size: 22px;
+                font-family: $secondryFont;
+                color:$primaryColor; 
+                font-weight: 900;
+                @include responsive(tablet){
+                    font-size: 32px;
+                    }
+            }
+            p{
+                font-size: 15px;
+                font-family: $secondryFont;
+                color:$grey; 
+                line-height: 25px;
+            }
+        }
+      
+    }
+}
+
+
+.about_five{
+    @include responsive(laptop){
+        max-width: 1280px;
+        margin: auto;  
+    }
+    
+  
+    .about_five_box{
+        @include responsive(tablet){
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;  
+        }
+        .resonsive_non{
+            display: none;
+            @include responsive(tablet){
+                display: block;
+                width: 10%;
+            }
+        }
+        .about_five_box_team{
+            box-shadow: 3px 3px 15px $light-grey;
+            margin: 20px;
+            text-align: center;
+            overflow: hidden;
+            @include responsive(tablet){
+                width: 18%;
+            }
+            h1{
+                font-size: 20px;
+                color: $pink;
+                font-family: $primaryFont;
+                margin-bottom: 0;
+                margin-top: 40px;
+            }
+            p{
+                font-size: 15px;
+                font-family: $secondryFont;
+                color:$grey; 
+                margin: 0;
+            }
+            h2{
+                text-transform: uppercase;
+                color: $primaryColor;
+                font-size: 12px;
+                font-weight: 900;
+                line-height: 25px;
+                margin-bottom: 20px;
+    
+            }
+        }
+        .about_five_box_next{
+            background-color: $primaryColor;
+            margin: 20px;
+            @include responsive(tablet){
+                width: 18%;
+            }
+            h1{
+                color:$white;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+                padding: 120px 20px
+            }
+        }
+    }
+}
+
+.about_six{
+    width:100%;
+    margin-bottom: 200px;
+    @include responsive(tablet){
+        margin-top: 150px;
+    }
+    .about_six_content{
+        width:90%;
+        margin: 60px auto;
+        text-align: center;
+        @include responsive(tablet){
+            width:50%;
+        }
+        p{
+            font-size: 16px;
+            line-height: 25px;
+            font-family: $secondryFont;
+            margin: 30px;
+            font-weight: bold;
+            color: $black;
+            opacity: 0.7;
+        }
+    }
+    iframe{
+        display: block;
+        width: 60%;
+        height:  100%;
+        margin: auto;
+        @include responsive(tablet){
+            height:  583px;
+            }
+    }
+}
+

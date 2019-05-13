@@ -6,7 +6,7 @@ Template Name: front-page
 <?php get_header(); ?>
 
 <section class="one">
-    <div class="one_containeir_title">
+    <div class="one_container_title">
         <h1>Innovative Analytics to empower Business.</h1>
         <p>As Data & Analytics enthusiasts, we are the architects of an emerging data-driven world.</p>
         <button class="btn">En savoir plus sur BGFi</button>
