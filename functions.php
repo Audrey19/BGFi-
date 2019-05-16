@@ -23,6 +23,7 @@ register_nav_menus( array(
   'primary' => __( 'Navigation principale', 'wpmu-theme' ),
   'secondary' => __( 'Navigation secondaire', 'wpmu-theme' ),
   'ternary' => __( 'Navigation ternaire', 'wpmu-theme' ),
+  'quatro' => __( 'Navigation quatro', 'wpmu-theme' ),
 ) );
 
 /*******************************

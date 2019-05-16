@@ -1,10 +1,13 @@
 header{
     width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
     margin: auto;
+    position: relative;
     .logo{
         display: block;
         width:115px;
@@ -19,6 +22,7 @@ header{
         align-items:center;
         .searchbar{
             margin-left: 60px;
+            color: $primaryColor;
         }
         .menu-navmenu-container{
             display: none;
@@ -31,12 +35,36 @@ header{
                 flex-direction: row;
                 justify-content: space-between ;
                 list-style: none;
+                &:hover{
+                    .sub-menu{
+                        display: block;
+                        position: absolute;
+                        bottom: -150px;
+                        background-color: rgba(white, 0.9);
+                        padding: 20px;
+                        padding-top: 40px;
+                            li{
+                                list-style: none;
+                                line-height: 30px;
+                                font-family: $secondryFont;
+                                font-size: 12px;
+                            }
+                
+                    }
+                }
+                .sub-menu{
+                   display: none;
+                }
                 a{
                     text-decoration: none;
-                    color:$black;
+                    color: $primaryColor;
                     font-size: 12px;
-
+                    cursor: pointer;
+                    &:hover{
+                        color: $pink;
+                    }
                 }
+                   
             }
         }
     }

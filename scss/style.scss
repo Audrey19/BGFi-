@@ -11,12 +11,25 @@
 @import "base/sitesettings";
 @import "base/base";
 
+/* Library */
+@import "library/slick";
+
+
 /* Modules */
 @import "modules/header";
 @import "modules/footer";
+@import "modules/buttons";
+
+
 
 /* Layout */
-
+@import "layouts/front-page";
+@import "layouts/apropos";
+@import "layouts/data-domains";
+@import "layouts/data-solutions";
+@import "layouts/data-services";
+@import "layouts/partners";
+@import "layouts/career";
 
 /* Vendor */
 @import "vendors/outdatedbrowser";
