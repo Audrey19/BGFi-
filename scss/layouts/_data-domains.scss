@@ -1,3 +1,55 @@
+
+.bis{
+    background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b),;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    height: 85vh; 
+    z-index: -5;
+    @include responsive(tablet){
+        height: 60vh; 
+        }
+    .kenburns-top {
+        overflow: hidden;
+        z-index: -3;
+       -webkit-animation: kenburns-top 160s ease-out both;
+       animation: kenburns-top 160s ease-out both;
+       @include responsive(tablet){
+        top:-150px;
+        position: absolute;
+        margin: auto;
+        width: 90%;
+        left:5%;
+        }
+    }
+    .one_container_title{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10%;
+        @include responsive(tablet){
+            width: 60%;
+        }
+        h1{
+            font-size: 48px;
+            color: $white;
+            font-family: $primaryFont;
+            font-weight: 900;
+            @include responsive(tablet){
+            font-size: 72px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: $grey;
+            line-height: 30px;
+            font-family: $secondryFont;
+        }
+
+    }
+
+  }
+
 .data_menu{
     background-color: $primaryColor;
     width: 100%;
@@ -43,7 +95,6 @@
 
 
 .projet{
-    width:100%;
     margin: 60px;
     .projet_container{
         text-align: center;

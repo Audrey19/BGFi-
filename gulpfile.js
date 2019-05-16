@@ -56,7 +56,7 @@ return gulp
 function scripts() {
     return (
     gulp
-        .src(['assets/js/library/*.js', 'assets/js/script/*.js'])
+        .src(['assets/js/script/*.js'])
         .pipe(concat('main.js'))
         .pipe(uglify().on('error', function (err) {
             notify({

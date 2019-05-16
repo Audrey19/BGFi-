@@ -246,6 +246,93 @@ body {
   padding: 0px;
   background-color: white; }
 
+/* Library */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 /* Modules */
 header {
   width: 80%;
@@ -429,242 +516,6 @@ header {
   font-weight: bold;
   width: 191px;
   height: 30px; }
-
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent; }
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0; }
-
-.slick-list:focus {
-  outline: none; }
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand; }
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: ''; }
-
-.slick-track:after {
-  clear: both; }
-
-.slick-loading .slick-track {
-  visibility: hidden; }
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px; }
-
-[dir='rtl'] .slick-slide {
-  float: right; }
-
-.slick-slide img {
-  display: block; }
-
-.slick-slide.slick-loading img {
-  display: none; }
-
-.slick-slide.dragging img {
-  pointer-events: none; }
-
-.slick-initialized .slick-slide {
-  display: block; }
-
-.slick-loading .slick-slide {
-  visibility: hidden; }
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent; }
-
-.slick-arrow.slick-hidden {
-  display: none; }
-
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
-
-/* Icons */
-@font-face {
-  font-family: 'slick';
-  font-weight: normal;
-  font-style: normal;
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); }
-
-/* Arrows */
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent; }
-
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: transparent; }
-
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1; }
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: .25; }
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: 'slick';
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.slick-prev {
-  left: -25px; }
-
-[dir='rtl'] .slick-prev {
-  right: -25px;
-  left: auto; }
-
-.slick-prev:before {
-  content: '←'; }
-
-[dir='rtl'] .slick-prev:before {
-  content: '→'; }
-
-.slick-next {
-  right: -25px; }
-
-[dir='rtl'] .slick-next {
-  right: auto;
-  left: -25px; }
-
-.slick-next:before {
-  content: '→'; }
-
-[dir='rtl'] .slick-next:before {
-  content: '←'; }
-
-/* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px; }
-
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center; }
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer; }
-
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent; }
-
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  outline: none; }
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  opacity: 1; }
-
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
-  text-align: center;
-  opacity: .25;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: black; }
 
 /* Layout */
 .one {
@@ -937,14 +788,14 @@ header {
   .about_one .about_one_container {
     width: 80%;
     margin: auto; }
-    .about_one .about_one_container h1 {
+    .about_one .about_one_container .one_container_title {
       color: white;
       font-family: "Montserrat", sans-serif;
       font-size: 30px;
       padding-top: 50px;
       text-align: center; }
       @media only screen and (min-width: 768px) {
-        .about_one .about_one_container h1 {
+        .about_one .about_one_container .one_container_title {
           font-size: 48px;
           padding-top: 150px;
           text-align: left; } }
@@ -1141,6 +992,50 @@ header {
       .about_six iframe {
         height: 583px; } }
 
+.bis {
+  background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 85vh;
+  z-index: -5; }
+  @media only screen and (min-width: 768px) {
+    .bis {
+      height: 60vh; } }
+  .bis .kenburns-top {
+    overflow: hidden;
+    z-index: -3;
+    -webkit-animation: kenburns-top 160s ease-out both;
+    animation: kenburns-top 160s ease-out both; }
+    @media only screen and (min-width: 768px) {
+      .bis .kenburns-top {
+        top: -150px;
+        position: absolute;
+        margin: auto;
+        width: 90%;
+        left: 5%; } }
+  .bis .one_container_title {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%; }
+    @media only screen and (min-width: 768px) {
+      .bis .one_container_title {
+        width: 60%; } }
+    .bis .one_container_title h1 {
+      font-size: 48px;
+      color: #FFF;
+      font-family: "Paytone One", sans-serif;
+      font-weight: 900; }
+      @media only screen and (min-width: 768px) {
+        .bis .one_container_title h1 {
+          font-size: 72px; } }
+    .bis .one_container_title p {
+      font-size: 20px;
+      color: #B6B6B6;
+      line-height: 30px;
+      font-family: "Montserrat", sans-serif; }
+
 .data_menu {
   background-color: #2A3865;
   width: 100%;
@@ -1183,7 +1078,6 @@ header {
         max-width: 20px; }
 
 .projet {
-  width: 100%;
   margin: 60px; }
   .projet .projet_container {
     text-align: center; }
@@ -1308,6 +1202,766 @@ header {
       display: block;
       width: 15px;
       height: 10px; }
+
+.data_solutions {
+  width: 90%;
+  margin: auto; }
+  @media only screen and (min-width: 768px) {
+    .data_solutions {
+      width: 70%;
+      margin: auto; } }
+  .data_solutions .data_soltions_box {
+    margin-top: 60px; }
+    @media only screen and (min-width: 768px) {
+      .data_solutions .data_soltions_box {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-basis: row;
+        -ms-flex-preferred-size: row;
+        flex-basis: row;
+        margin: 60px; } }
+    .data_solutions .data_soltions_box .data_solutions_image {
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .data_solutions .data_soltions_box .data_solutions_image {
+          width: 35%; } }
+      .data_solutions .data_soltions_box .data_solutions_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .data_solutions .data_soltions_box .data_soltions_box_content {
+      padding: 20px;
+      background-color: #F1F5F6;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .data_solutions .data_soltions_box .data_soltions_box_content {
+          width: 65%;
+          padding: 60px;
+          text-align: left; } }
+      .data_solutions .data_soltions_box .data_soltions_box_content .solutions_title {
+        font-size: 32px;
+        color: #2A3865;
+        font-family: "Montserrat", sans-serif; }
+      .data_solutions .data_soltions_box .data_soltions_box_content p {
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 25px; }
+
+.data_solutions {
+  width: 90%;
+  margin: auto; }
+  @media only screen and (min-width: 768px) {
+    .data_solutions {
+      width: 70%;
+      margin: auto; } }
+  .data_solutions .data_soltions_box {
+    margin-top: 60px; }
+    @media only screen and (min-width: 768px) {
+      .data_solutions .data_soltions_box {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-basis: row;
+        -ms-flex-preferred-size: row;
+        flex-basis: row;
+        margin: 60px; } }
+    .data_solutions .data_soltions_box .data_service_image {
+      width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .data_solutions .data_soltions_box .data_service_image {
+          width: 25%; } }
+      .data_solutions .data_soltions_box .data_service_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .data_solutions .data_soltions_box .data_service_box_content {
+      padding: 20px;
+      background-color: #F1F5F6;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .data_solutions .data_soltions_box .data_service_box_content {
+          width: 75%;
+          padding: 60px;
+          text-align: left; } }
+      .data_solutions .data_soltions_box .data_service_box_content .service_title {
+        color: black;
+        opacity: 0.6;
+        font-weight: bold;
+        font-size: 32px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0; }
+      .data_solutions .data_soltions_box .data_service_box_content .data_soltions_box_content_list {
+        padding-left: 30px; }
+        .data_solutions .data_soltions_box .data_service_box_content .data_soltions_box_content_list li {
+          color: #2A3865;
+          font-size: 14px;
+          line-height: 30px;
+          list-style-type: none;
+          position: relative; }
+          .data_solutions .data_soltions_box .data_service_box_content .data_soltions_box_content_list li img {
+            width: 10px;
+            left: -20px;
+            position: absolute;
+            top: 9px; }
+
+.parteners_logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-bottom: 1px solid #F1F5F6;
+  padding: 30px; }
+  .parteners_logo img {
+    opacity: 0.2; }
+    .parteners_logo img:hover {
+      opacity: 1; }
+
+.partners_container {
+  width: 80%;
+  margin: 100px auto;
+  border-bottom: 1px solid #B6B6B6;
+  padding-bottom: 60px; }
+  @media only screen and (min-width: 768px) {
+    .partners_container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  .partners_container .partners_container_box_left {
+    width: 60%; }
+    .partners_container .partners_container_box_left .left_top {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .partners_container .partners_container_box_left .left_top .left_top_stat {
+        margin: 20px;
+        font-size: 14px;
+        color: #2A3865;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+    .partners_container .partners_container_box_left .left_bottom h2 {
+      color: #E8356B;
+      font-size: 20px;
+      font-family: "Paytone One", sans-serif; }
+    .partners_container .partners_container_box_left .left_bottom p {
+      line-height: 25px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px; }
+    .partners_container .partners_container_box_left .left_bottom a {
+      font-size: 16px; }
+  .partners_container .partners_container_box_right {
+    width: 30%;
+    box-shadow: 7px 7px 15px #F1F5F6; }
+    .partners_container .partners_container_box_right .right_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .partners_container .partners_container_box_right .right_text {
+      text-align: center; }
+      .partners_container .partners_container_box_right .right_text h3 {
+        color: #B6B6B6;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px; }
+      .partners_container .partners_container_box_right .right_text p {
+        color: #E8356B;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: bold;
+        padding: 10px; }
+
+.career_one {
+  background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  z-index: -5; }
+  @media only screen and (min-width: 768px) {
+    .career_one {
+      height: 60vh; } }
+  .career_one .about_one_container {
+    width: 80%;
+    margin: auto; }
+    .career_one .about_one_container .about_one_container_title {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold; }
+      @media only screen and (min-width: 768px) {
+        .career_one .about_one_container .about_one_container_title {
+          margin-top: 120px;
+          font-size: 48px;
+          padding-top: 50px; } }
+    .career_one .about_one_container .about_one_container_p {
+      width: 100%;
+      margin: auto; }
+      @media only screen and (min-width: 768px) {
+        .career_one .about_one_container .about_one_container_p {
+          width: 50%;
+          margin: auto; } }
+      .career_one .about_one_container .about_one_container_p p {
+        color: white;
+        opacity: 0.8;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center; }
+    .career_one .about_one_container .nasa {
+      overflow: hidden;
+      z-index: -3;
+      -webkit-animation: kenburns-top 160s ease-out both;
+      animation: kenburns-top 160s ease-out both; }
+      @media only screen and (min-width: 768px) {
+        .career_one .about_one_container .nasa {
+          top: -150px;
+          position: absolute;
+          margin: auto;
+          width: 90%;
+          left: 5%; } }
+
+.career_two {
+  width: 80%;
+  margin: 60px auto; }
+  @media only screen and (min-width: 768px) {
+    .career_two .career_two_box_first {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  .career_two .career_two_box_first .career_two_box_first_item {
+    background-color: #F1F5F6;
+    text-align: center; }
+    .career_two .career_two_box_first .career_two_box_first_item h1 {
+      font-size: 72px;
+      color: #2A3865;
+      font-family: "Montserrat", sans-serif; }
+    .career_two .career_two_box_first .career_two_box_first_item p {
+      font-size: 20px;
+      color: #E8356B;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold; }
+      @media only screen and (min-width: 768px) {
+        .career_two .career_two_box_first .career_two_box_first_item p {
+          padding: 20px 80px; } }
+    @media only screen and (min-width: 768px) {
+      .career_two .career_two_box_first .career_two_box_first_item {
+        width: 45%; } }
+  .career_two .career_two_box {
+    background-color: #F1F5F6;
+    padding: 30px;
+    margin-top: 30px; }
+    .career_two .career_two_box h1 {
+      font-size: 18px;
+      color: #2A3865;
+      font-family: "Montserrat", sans-serif; }
+    @media only screen and (min-width: 768px) {
+      .career_two .career_two_box .career_two_box_cnt {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+    .career_two .career_two_box .career_two_box_cnt .career_two_box_cnt_logo {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .career_two .career_two_box .career_two_box_cnt .career_two_box_cnt_logo p {
+        font-size: 20px;
+        color: #E8356B;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+
+.career_map {
+  position: relative; }
+  .career_map h1 {
+    font-size: 36px;
+    color: #2A3865;
+    font-family: "Paytone One", sans-serif;
+    text-align: center;
+    padding: 20px; }
+    @media only screen and (min-width: 768px) {
+      .career_map h1 {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
+  .career_map .carte img {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto; }
+
+.career_postes {
+  width: 80%;
+  margin: auto; }
+  .career_postes .career_postes_title {
+    position: relative;
+    margin: 20px 0; }
+    @media only screen and (min-width: 768px) {
+      .career_postes .career_postes_title {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    @media only screen and (min-width: 768px) {
+      .career_postes .career_postes_title .career_postes_title_left {
+        position: absolute;
+        top: -100px;
+        left: 0; } }
+    .career_postes .career_postes_title .career_postes_title_left p {
+      font-size: 11px;
+      color: #E8356B;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold; }
+    .career_postes .career_postes_title .career_postes_title_right {
+      background-color: #F1F5F6;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 5px 30px; }
+      @media only screen and (min-width: 768px) {
+        .career_postes .career_postes_title .career_postes_title_right {
+          position: absolute;
+          top: -100px;
+          right: 0; } }
+      .career_postes .career_postes_title .career_postes_title_right p {
+        color: #B6B6B6;
+        font-size: 11px;
+        font-family: "Montserrat", sans-serif;
+        margin-right: 10px;
+        font-weight: bold; }
+  @media only screen and (min-width: 768px) {
+    .career_postes .career_postes_cont {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  .career_postes .career_postes_cont .career_postes_cont_boxes {
+    width: 90%;
+    box-shadow: 5px 5px 15px #F1F5F6; }
+    @media only screen and (min-width: 768px) {
+      .career_postes .career_postes_cont .career_postes_cont_boxes {
+        width: 30%; } }
+    .career_postes .career_postes_cont .career_postes_cont_boxes .career_postes_cont_boxes_top {
+      position: relative; }
+      .career_postes .career_postes_cont .career_postes_cont_boxes .career_postes_cont_boxes_top p {
+        position: absolute;
+        background-color: #2A3865;
+        padding: 5px;
+        color: #FFF;
+        right: 0;
+        top: 0;
+        margin: 0; }
+      .career_postes .career_postes_cont .career_postes_cont_boxes .career_postes_cont_boxes_top img {
+        width: 100%; }
+    .career_postes .career_postes_cont .career_postes_cont_boxes .career_postes_cont_boxes_bottom {
+      padding: 20px; }
+      .career_postes .career_postes_cont .career_postes_cont_boxes .career_postes_cont_boxes_bottom p {
+        color: #2A3865;
+        font-size: 11px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+      .career_postes .career_postes_cont .career_postes_cont_boxes .career_postes_cont_boxes_bottom h1 {
+        color: #E8356B;
+        font-size: 24px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 90px; }
+
+.voir-plus {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #B6B6B6;
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin: 60px; }
+
+.career_candidat {
+  background-color: #2A3865;
+  width: 100%; }
+  .career_candidat .career_candidat_title {
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px 0; }
+    @media only screen and (min-width: 768px) {
+      .career_candidat .career_candidat_title {
+        padding: 60px;
+        width: 70%; } }
+    .career_candidat .career_candidat_title h1 {
+      color: #FFF;
+      font-size: 36px;
+      font-family: "Paytone One", sans-serif;
+      line-height: 50px; }
+
+.career_evoluer .career_evoluer_content {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .career_evoluer .career_evoluer_content {
+      width: 60%;
+      margin: 120px auto; } }
+  .career_evoluer .career_evoluer_content h1 {
+    color: #E8356B;
+    font-size: 30px;
+    font-family: "Paytone One", sans-serif;
+    line-height: 50px; }
+    @media only screen and (min-width: 768px) {
+      .career_evoluer .career_evoluer_content h1 {
+        font-size: 48px; } }
+  .career_evoluer .career_evoluer_content p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 25px;
+    font-weight: bold; }
+
+.slick_box {
+  box-shadow: 3px 3px 15px #F1F5F6;
+  height: 480px;
+  margin: 30px 60px;
+  position: relative; }
+  .slick_box p {
+    opacity: 0.4;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 20px 40px; }
+  .slick_box h1 {
+    color: #E8356B;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 40px;
+    line-height: 25px;
+    font-weight: 900; }
+  .slick_box img {
+    position: absolute;
+    top: 0;
+    z-index: -1; }
+
+button.slick-next {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  padding: 30px;
+  border: none;
+  background-color: #E8356B;
+  color: #FFF; }
+
+button.slick-prev {
+  opacity: 0; }
+
+.career_etapes {
+  width: 100%;
+  background-color: #2A3865; }
+  .career_etapes .career_etapes_container {
+    width: 90%;
+    margin: auto;
+    padding: 60px 0; }
+    @media only screen and (min-width: 768px) {
+      .career_etapes .career_etapes_container {
+        width: 60%; } }
+    .career_etapes .career_etapes_container h1 {
+      color: #FFF;
+      font-size: 30px;
+      font-family: "Paytone One", sans-serif;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .career_etapes .career_etapes_container h1 {
+          font-size: 48px; } }
+    @media only screen and (min-width: 768px) {
+      .career_etapes .career_etapes_container .career_etapes_container_box {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_top {
+      position: relative;
+      width: 90%;
+      margin: auto;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_top {
+          width: 30%;
+          text-align: left;
+          text-align: left; } }
+      .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_top h2 {
+        color: #FFF;
+        opacity: 0.1;
+        font-size: 200px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0; }
+      .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_top p {
+        color: #E8356B;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 25px;
+        font-weight: 900;
+        position: absolute;
+        bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      .career_etapes .career_etapes_container .career_etapes_container_box {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_bottom {
+      position: relative;
+      width: 90%;
+      margin: auto;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_bottom {
+          width: 30%;
+          text-align: left; } }
+      .career_etapes .career_etapes_container .career_etapes_container_box .career_etapes_container_box_bottom p {
+        color: #FFF;
+        opacity: 0.8;
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 20px; }
+
+.career_process {
+  width: 100%;
+  background-color: #E8356B; }
+  .career_process .career_process_container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0; }
+    @media only screen and (min-width: 768px) {
+      .career_process .career_process_container {
+        width: 60%;
+        padding: 60px; } }
+    .career_process .career_process_container p {
+      color: #FFF;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center; }
+
+.career_talent {
+  width: 100%; }
+  .career_talent .career_talent_container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0; }
+    @media only screen and (min-width: 768px) {
+      .career_talent .career_talent_container {
+        width: 60%; } }
+    .career_talent .career_talent_container h1 {
+      color: #2A3865;
+      font-size: 30px;
+      font-family: "Paytone One", sans-serif;
+      line-height: 50px; }
+      @media only screen and (min-width: 768px) {
+        .career_talent .career_talent_container h1 {
+          font-size: 48px; } }
+    .career_talent .career_talent_container p {
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 30px;
+      padding: 20px 0; }
+
+.career_rh {
+  width: 100%;
+  background-color: #F8FAFA;
+  padding: 60px 0; }
+  .career_rh .career_rh_container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0; }
+    @media only screen and (min-width: 768px) {
+      .career_rh .career_rh_container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    .career_rh .career_rh_container .career_rh_container_box_top {
+      position: relative;
+      text-align: center; }
+      .career_rh .career_rh_container .career_rh_container_box_top p {
+        position: absolute;
+        bottom: -45px;
+        padding: 13px 40px;
+        background-color: white;
+        color: #B6B6B6;
+        font-size: 11px;
+        font-family: "Montserrat", sans-serif;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        box-shadow: 0px 3px 6px #F1F5F6; }
+    .career_rh .career_rh_container .career_rh_container_box_bottom {
+      margin-top: 20px;
+      text-align: center; }
+      .career_rh .career_rh_container .career_rh_container_box_bottom h1 {
+        color: #2A3865;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+      .career_rh .career_rh_container .career_rh_container_box_bottom p {
+        color: #B6B6B6;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+
+.career_form {
+  widows: 100%;
+  margin: 30px 0; }
+  @media only screen and (min-width: 768px) {
+    .career_form {
+      margin: 90px 0; } }
+  .career_form .wpcf7 {
+    width: 90%;
+    margin: auto;
+    overflow: hidden; }
+    @media only screen and (min-width: 768px) {
+      .career_form .wpcf7 {
+        width: 60%; } }
+    .career_form .wpcf7 input {
+      color: #B6B6B6;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      padding-left: 10px; }
+    .career_form .wpcf7 textarea {
+      color: #8C8C8C;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      width: 100%;
+      padding-left: 10px; }
+    .career_form .wpcf7 .wpcf7-form-control {
+      border: none;
+      background-color: #F8FAFA; }
+    .career_form .wpcf7 .box1 {
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media only screen and (min-width: 768px) {
+        .career_form .wpcf7 .box1 {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      .career_form .wpcf7 .box1 .wpcf7-form-control {
+        padding: 20px 5px; }
+    .career_form .wpcf7 .box2 {
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media only screen and (min-width: 768px) {
+        .career_form .wpcf7 .box2 {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      .career_form .wpcf7 .box2 .wpcf7-form-control {
+        padding: 20px 5px; }
+    .career_form .wpcf7 .wpcf7-radio {
+      background-color: #FFF; }
+    .career_form .wpcf7 .wpcf7-list-item-label {
+      font-size: 15px;
+      line-height: 25px;
+      padding-left: 60px;
+      font-family: "Montserrat", sans-serif;
+      background-color: #FFF; }
+    .career_form .wpcf7 .wpcf7-submit {
+      display: block;
+      margin: 10px auto;
+      background-color: #E8356B;
+      color: #FFF;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      width: 150px;
+      height: 50px; }
 
 /* Vendor */
 #outdated {

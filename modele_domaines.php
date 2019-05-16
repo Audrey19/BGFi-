@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: data&analytics
+Template Name: domaines
 */
 ?>
 <?php get_header(); ?>
-<section class="one">
+<section class="bis">
     <div class="one_container_title">
         <h1 class="title_data">Data & Analytics</h1>
         <p>La transformation digitale se mène par la donnée. De la compréhension de vos données jusqu'aux utilisateurs finaux. Des plateformes analytiques traditionnelles et modernes à l'analyse en libre service et la Data Science. Nous vous guidons dans la définitions et l'implémentation de votre Data-driven strategy.</p>
@@ -29,7 +29,7 @@ Template Name: data&analytics
         <div class="domain data-management" data-domaine="data-management">
             <p>1° Data Management</p>   
             <img class="arrow-close" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_down.png" alt="arrow">
-            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_up.png" alt="arrow">
+            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow-right-white.png" alt="arrow">
         </div>
         <div class="sub-domain">
             <div class="sub-domain-item">
@@ -51,7 +51,7 @@ Template Name: data&analytics
         <div class="domain data-engineering" data-domaine="data-engineering">
             <p>2° Data Engineering</p>   
             <img class="arrow-close" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_down.png" alt="arrow">
-            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_up.png" alt="arrow">
+            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow-right-white.png" alt="arrow">
         </div>
         <div class="sub-domain">
             <div class="sub-domain-item">
@@ -73,7 +73,7 @@ Template Name: data&analytics
         <div class="domain advanced-analytics" data-domaine="advanced-analytics">
             <p>3° Advanced Analytics</p>   
             <img class="arrow-close" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_down.png" alt="arrow">
-            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_up.png" alt="arrow">
+            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow-right-white.png" alt="arrow">
         </div>
         <div class="sub-domain">
             <div class="sub-domain-item">
@@ -95,7 +95,7 @@ Template Name: data&analytics
         <div class="domain vertical-solutions" data-domaine="vertical-solutions">
             <p>4° Vertical Solutions</p>   
             <img class="arrow-close" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_down.png" alt="arrow">
-            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_up.png" alt="arrow">
+            <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow-right-white.png" alt="arrow">
         </div> 
         <div class="sub-domain">
             <div class="sub-domain-item">

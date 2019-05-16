@@ -1,0 +1,50 @@
+.data_solutions{
+    width:90%;
+    margin:auto;
+    @include responsive(tablet){
+        width:70%;
+        margin:auto;
+    }
+       
+    .data_soltions_box{
+        margin-top: 60px;
+        @include responsive(tablet){
+            display:flex;
+            flex-basis: row;
+            margin: 60px;
+        }
+        
+        .data_solutions_image{
+            width: 100%;
+            @include responsive(tablet){
+                width: 35%;
+            }
+                img{
+                width:100%; 
+                height:100%; 
+                object-fit:cover; 
+                }
+     
+        }
+        .data_soltions_box_content{
+            padding: 20px;
+            background-color: $light-grey;
+            text-align: center;
+            @include responsive(tablet){
+                width: 65%;
+                padding: 60px;
+                text-align: left;
+            }
+            .solutions_title{
+               font-size: 32px;
+               color:$primaryColor;
+               font-family: $secondryFont; 
+            }
+            p{
+                font-size: 15px;
+               font-family: $secondryFont; 
+               line-height: 25px;
+            }
+        }
+    }
+}

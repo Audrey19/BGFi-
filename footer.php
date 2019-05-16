@@ -1,7 +1,5 @@
 
 	<!-- MAIN APP -->
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); echo '/main.js?' . filemtime( get_stylesheet_directory() . '/main.js'); ?>"></script>
-	<?php wp_footer(); ?>
 
 	<section class="container_footer">
 		<div class="menu_secondary">
@@ -16,5 +14,14 @@
 			</div>
 		</div>
 	</section>
+
+	<script 
+    src="https://code.jquery.com/jquery-1.12.3.js"   
+    integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   
+	crossorigin="anonymous"></script>
+	<script src="<?php bloginfo('stylesheet_directory');?>/assets/js/library/slick.min.js"></script>
+
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); echo '/main.js?' . filemtime( get_stylesheet_directory() . '/main.js'); ?>"></script>
+	<?php wp_footer(); ?>
 </body>
 </html>

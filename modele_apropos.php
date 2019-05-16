@@ -7,7 +7,7 @@ Template Name: a-propos
 
 <section class="about_one">
     <div class="about_one_container">
-        <h1>BGFI : bientôt 20 ans de conseil et de services pour accompagner les organisations dans leur stratégie Data-driven.</h1>
+        <h1 class="one_container_title">BGFI : bientôt 20 ans de conseil et de services pour accompagner les organisations dans leur stratégie Data-driven.</h1>
         <img  class="nasa" src="<?php echo get_bloginfo('template_url') ?>/assets/images/nasa.jpg" alt="logo">
     </div>
 </section>
