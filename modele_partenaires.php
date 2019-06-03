@@ -4,7 +4,7 @@ Template Name: partenaires
 */
 ?>
 <?php get_header(); ?>
-<section class="bis">
+<section class="banner">
     <div class="one_container_title">
         <h1 class="title_data">Nos partenaires</h1>
         <p>Nous avons toujours été animés par une culture du partenariat. L'objectif est de trouver des synergies et de construire des alliances à l'épreuve du temps. C'est pourquoi nous menons régulièrement des études sur les nouvelles solutions en lien avec notre activité et notre vision du marché de l'Analytics. Lorsqu'un potentiel partenaire correspond à nos exigences, nous imaginons ensemble les solutions pour répondre aux attentes de nos clients.</p>

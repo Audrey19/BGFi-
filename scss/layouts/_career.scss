@@ -1,62 +1,21 @@
-
-.career_one{
-    background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b),;
-    width:100%;
+.text{
+    text-align: center;
     position: relative;
-    overflow: hidden;
-    height: 50vh; 
-    z-index: -5;
-    @include responsive(tablet){
-        height: 60vh;
-    } 
-    .about_one_container{
-        width: 80%;
-        margin: auto;
-            .about_one_container_title{
-            color: white;
-            font-family: $secondryFont;
-            font-size: 30px; 
-            text-align: center;
-            font-weight: bold;
-            @include responsive(tablet){
-                margin-top: 120px;
-                font-size: 48px;
-                padding-top: 50px;
-            } 
+    .one_container_text{
+        color:$white;
+        position: absolute;
+        top:50%;
+        left: 5%;
+        right: 5%;
+        line-height: 25px;
+        text-align: center;
+        @include responsive(tablet){
+            top:55%;
+            left:50%;
+            transform: translate(-50%);
         }
-
-        .about_one_container_p{
-            width: 100%;
-            margin: auto;
-            @include responsive(tablet){
-                width: 50%;
-                margin: auto;
-            } 
-            p{
-                color:white;
-                opacity: 0.8;
-                font-family: $secondryFont;
-                font-size: 18px;
-                line-height: 25px;
-                text-align: center;
-            }
-        }
-                .nasa{
-                overflow: hidden;
-                z-index: -3;
-            -webkit-animation: kenburns-top 160s ease-out both;
-            animation: kenburns-top 160s ease-out both;
-            @include responsive(tablet){
-                top:-150px;
-                position: absolute;
-                margin: auto;
-                width: 90%;
-                left:5%;
-                }
-            }
-        }
+    }
 }
-
 .career_two{
     width: 80%;
     margin: 60px auto;
@@ -194,6 +153,7 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         .career_postes_cont_boxes{
             width: 90%;
@@ -224,7 +184,7 @@
                     font-family: $secondryFont;
                     font-weight: bold;
                 }
-                h1{
+                .career-text{
                     color: $pink;
                     font-size: 24px;
                     font-family: $secondryFont;
@@ -295,47 +255,61 @@
    
 }
 
-.slick_box{
-    box-shadow: 3px 3px 15px $light-grey;
-    height: 480px;
-    margin:30px 60px;
-    position: relative;
-    p{
-       opacity: 0.4;
-        font-size: 12px;
-        font-family: $secondryFont;
-        font-weight: bold;
-        line-height: 20px;
-        padding: 20px 40px;
+.your-class{
+    .slick_box{
+        box-shadow: 3px 3px 15px $light-grey;
+        height: 480px;
+        margin:30px 60px;
+        position: relative;
+        p{
+           opacity: 0.4;
+            font-size: 12px;
+            font-family: $secondryFont;
+            font-weight: bold;
+            line-height: 20px;
+            padding: 20px 40px;
+        }
+        h1{
+            color: $pink;
+            font-size: 18px;
+            font-family: $secondryFont;
+            padding:20px 40px;
+            line-height: 25px;
+            font-weight: 900;
+        }
+        img{
+            position: absolute;
+            top:0;
+            z-index: -1;
+        }
     }
-    h1{
-        color: $pink;
-        font-size: 18px;
-        font-family: $secondryFont;
-        padding:20px 40px;
-        line-height: 25px;
-        font-weight: 900;
-    }
-    img{
+    
+    button.slick-next{
         position: absolute;
+        bottom: -5px;
+        right: 0;
+        padding: 30px;
+        border:none;
+        background-color: $pink;
+        color: $white;
+        background-image: url(assets/images/arrow-right-white.png)
+    }
+    
+    button.slick-prev{
+      opacity: 0;
+    }
+    &:after{
+        content:'';
+        display: block;
+        width:20vw;
+        height: 100%;
+        position: absolute;
+        right:0;
         top:0;
-        z-index: -1;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     }
 }
 
-button.slick-next{
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-    padding: 30px;
-    border:none;
-    background-color: $pink;
-    color: $white;
-}
-
-button.slick-prev{
-  opacity: 0;
-}
 
 .career_etapes{
     width: 100%;
@@ -519,10 +493,9 @@ background-color: $pink;
 }
 
 .career_form{
-    widows: 100%;
-    margin: 30px 0;
+    margin-top: 30px;
     @include responsive(tablet){
-        margin: 90px 0;
+        margin-top: 90px;
     }
     .wpcf7{
         width:90%;
@@ -543,14 +516,16 @@ background-color: $pink;
             font-size: 15px;
             font-family: $secondryFont;
             font-weight: bold;
-            width: 100%; 
             padding-left: 10px;
+            @include responsive(tablet){
+                width: 100%; 
+            }
          }
          .wpcf7-form-control{
             border:none;
             background-color:#F8FAFA;
         }
-        .box1{
+        .box1, .box2{
             align-items: center;
             @include responsive(tablet){
                 display:flex;
@@ -561,20 +536,6 @@ background-color: $pink;
                 padding: 20px 5px;
             }
            
-        }
-        .box2{
-            @include responsive(tablet){
-                display:flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            align-items: center;
-            .wpcf7-form-control{
-                padding: 20px 5px;
-            }
-        }
-        .wpcf7-radio{
-            background-color: $white;
         }
         .wpcf7-list-item-label{
             font-size: 15px;

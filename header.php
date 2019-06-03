@@ -24,4 +24,18 @@
   <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?> 
   <div class="searchbar"><img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon_search.png" alt="logo"/></div>
   </div>
+
+  <button class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+        <script>
+          var hamburger = document.querySelector(".hamburger");
+          var navigation = document.querySelector(".menu-navmenu-container");
+          hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+            navigation.classList.toggle("is-active");
+          });
+        </script>
+      </button>
 </header>

@@ -1,9 +1,66 @@
-.parteners_logo{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    border-bottom: 1px solid $light-grey;
-    padding: 30px;
+
+.banner{
+    background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b),;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -5;
+    @include responsive(tablet){
+        height: 50vh; 
+        }
+    .kenburns-top {
+        top:0;
+        left:0;
+        position: absolute;
+        overflow: hidden;
+        z-index: -3;
+       -webkit-animation: kenburns-top 160s ease-out both;
+       animation: kenburns-top 160s ease-out both;
+       @include responsive(tablet){
+        top:-150px;
+        margin: auto;
+        width: 60%;
+        left:20%;
+        }
+    }
+    .one_container_title{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-top: 80px;
+        @include responsive(tablet){
+            width: 70%;
+        }
+        h1{
+            font-size: 48px;
+            color: $white;
+            font-family: $primaryFont;
+            @include responsive(tablet){
+            font-size: 72px;
+            }
+        }
+        p{
+            font-size: 15px;
+            color: $white;
+            opacity: 0.8;
+            line-height: 30px;
+            font-family: $secondryFont;
+        }
+
+    }
+
+  }
+  .parteners_logo{
+     text-align: center;
+      width: 90%;
+      margin:auto;
+    @include responsive(tablet){
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+        border-bottom: 1px solid $light-grey;
+        padding: 30px;
+    }
     img{
         opacity: 0.2;
         &:hover{
@@ -16,20 +73,28 @@
 
 .partners_container{
     width: 80%;
-    margin: 100px auto;
+    margin: 50px auto;
     border-bottom: 1px solid $grey;
     padding-bottom: 60px;
     @include responsive(tablet){
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 100px auto;
     }
     .partners_container_box_left{
-        width: 60%;
+        width: 90%;
+        margin:auto;
+        @include responsive(tablet){
+            width: 60%;
+        }
         .left_top{
-            display:flex;
-            justify-content: space-between;
-            flex-direction: row;
+          text-align: center;
+            @include responsive(tablet){
+                display:flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
             .left_top_stat{
                 margin: 20px;
                 font-size: 14px;
@@ -39,6 +104,10 @@
             }
         }
         .left_bottom{
+            text-align: center;
+            @include responsive(tablet){
+                text-align: left;
+            }
             h2{
                 color:$pink;
                 font-size: 20px;
@@ -55,8 +124,13 @@
         }
     }
     .partners_container_box_right{
-        width: 30%;
+        width: 80%;
+        margin: 20px auto;
         box-shadow: 7px 7px 15px $light-grey;
+        @include responsive(tablet){
+            width: 30%;
+            margin: 0;
+        }
         .right_img{
             img{
                 width:100%; 
@@ -78,7 +152,10 @@
                 line-height: 25px;
                 font-weight: bold;
                 padding: 10px;
-            }
+                @include responsive(tablet){
+                    font-size: 10px;
+                }
         }
     }
+}
 }

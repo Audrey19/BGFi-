@@ -6,24 +6,22 @@ Template Name: a-propos
 <?php get_header(); ?>
 
 <section class="about_one">
-    <div class="about_one_container">
-        <h1 class="one_container_title">BGFI : bientôt 20 ans de conseil et de services pour accompagner les organisations dans leur stratégie Data-driven.</h1>
+        <h1 class="one_container_title">BGFI : Un partenaire de confiance pour vous accompagner dans la valorisation de votre principal "asset" : la donnée.</h1>
         <img  class="nasa" src="<?php echo get_bloginfo('template_url') ?>/assets/images/nasa.jpg" alt="logo">
-    </div>
 </section>
 
 <section class="about_two">
         <div class="about_two_container_box">
             <h1>200</h1>
-            <p>Nombre de collaborateurs</p>
+            <p>Collaborateurs</p>
         </div>
         <div class="about_two_container_box">
             <h1>4</h1>
-            <p>Nombre de Pays</p>
+            <p>Pays</p>
         </div>
         <div class="about_two_container_box">
             <h1>4</h1>
-            <p>Nombre de domaines d'intervention</p>
+            <p>Domaines d'intervention</p>
         </div>
 </section>
 
@@ -79,15 +77,28 @@ Template Name: a-propos
 <section class="about_four">
     <h1 class="first_title">L’histoire BGFI</h1>
     <div class="variable-width">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-    </div>
+        <div class="slick_variable_box">
+            <h3>2002</h3>
+            <h1>Création de BGFI en France</h1>
+            <p>Aux balbutiements de la Business Intelligence, les fondateurs de BGFi décèlent un formidable potentiel à accompagner les entreprises françaises dans leurs problématiques décisionnelles. Passionnés par la donnée et l'Intelligence Décisionnelle, ils partagent la volonté de créer avant tout une aventure humaine : BGFi est né.</p>
+        </div>
+        <div class="slick_variable_box">
+            <h3>2010</h3>
+            <h1>Ouverture de BGFI en Tunisie</h1>
+            <p>Toujours soucieux de fournir des services de qualité à ses clients et de construire avec eux une relation pérenne, BGFi fonde BGFi Engineering composée d'ingénieurs spécialisés et passionnés. La vocation principale de cette entité est de maintenir puis de faire évoluer les applications délivrées à l'issue de nos projets.</p>
+        </div>
+        <div class="slick_variable_box">
+            <h3>2016</h3>
+            <h1>Alliance avec la Positive Thinking Company</h1>
+            <p>Pour assurer sa croissance et adresser de nouveaux marchés, BGFi se rapproche de la Positive Thinking Company (PTC) pour former un partenariat stratégique. L'entreprise peut alors s'appuyer sur une assise financière solide pour innover, diversifier son portefeuille de services et enfin s'ouvrir sur le marché européen.</p>
+        </div>
+        <div class="slick_variable_box">
+            <h3>2002</h3>
+            <h1>Un département dédié à l'évolution</h1>
+            <p>Parce que nous croyons que vos rêves peuvent évoluer et parce que vos aspirations vous sont propres, nous avons créé une équipe dédiée à votre évolution. Elle vous guidera, vous conseillera et suivra vos progrès pour permettre un parcours professionnel vous correspondant, et connecté aux transformations du monde Data & Analytics.</p>
+        </div>
+    </div> 
+   
 </section>
 
 

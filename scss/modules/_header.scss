@@ -31,10 +31,12 @@ header{
                 width: 80%;
             }
             .menu{
+                list-style: none;
+                @include responsive(tablet) {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between ;
-                list-style: none;
+                justify-content: space-between ; 
+               
                 &:hover{
                     .sub-menu{
                         display: block;
@@ -52,6 +54,8 @@ header{
                 
                     }
                 }
+                }
+         
                 .sub-menu{
                    display: none;
                 }
@@ -67,5 +71,38 @@ header{
                    
             }
         }
+        .is-active{
+            display: block;
+            height: 100vh;
+            text-align: center;
+            width:100vw;
+            padding: 20px 15px;
+            display: block;
+            position: fixed;
+            top: 96px;
+            right: 0;
+            background-color: $primaryColor;
+            list-style:none;
+            .menu{
+                li{
+                    padding: 40px;
+                        a{
+                            color:$white;
+                            font-size: 18px;
+                            font-family: $secondryFont;
+                        }
+                    }
+                    .sub-menu{
+                        display: none;
+                    }
+            }
+        }
     }
 }
+/*hamburger-menu*/
+.hamburger{
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+

@@ -1,0 +1,109 @@
+.contact-banner{
+height: 40vh;
+}
+.acceptance{
+    -webkit-appearance: none;
+    background:$light-grey;
+    position: relative;
+    border-radius: 50px;
+    height:3rem;
+    width: 5rem;
+    display:block;
+        &:after {
+            content: "";
+            position: absolute;
+            height:2.5rem;
+            width: 2.5rem;
+            background-color: $pink;
+            border-radius: 50%;
+            top:4px;
+            right: inherit;
+            left:4px;
+      }
+&:checked:after{
+    right: 4px;
+    left: inherit;
+}
+  
+
+}
+.career_list{
+    width: 90%;
+    margin:60px auto;
+    @include responsive(tablet){
+        width: 30%;
+    }
+    .career_list_item{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+        list-style-type: none;
+        li{
+           font-size: 11px;
+           color: $primaryColor;
+           cursor: pointer;
+           font-weight: bold;
+           &:hover {
+            color: $pink;
+            text-decoration-line: underline;
+           } 
+        }
+    }
+
+}
+
+
+.contact_bureaux{
+    width:80%;
+    margin:auto;
+    @include responsive(tablet){
+        width:60%;
+        margin:auto;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+        .career_postes_cont_boxes{
+            width: 90%;
+            box-shadow: 5px 5px 15px $light-grey;
+            margin: 20px 0;
+            @include responsive(tablet){
+                width: 356px;
+            }
+            .career_postes_cont_boxes_top{
+                position: relative;
+                p{
+                    position: absolute;
+                    background-color: $primaryColor;
+                    padding: 5px;
+                    color:$white;
+                    right:0;
+                    top:0;
+                    margin: 0;
+                }
+                img{
+                    width:100%;
+                }
+            }
+            .career_postes_cont_boxes_bot{
+                padding: 20px;
+                h1{
+                    color: $pink;
+                    font-size: 20px;
+                    font-family: $secondryFont;
+                    margin-bottom: 30px;
+                    margin-top: 0;
+                }
+                p{
+                    color: $dark-grey;
+                    font-size: 12px;
+                    font-family: $secondryFont;
+                    margin-bottom: 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+}
+

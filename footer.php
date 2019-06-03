@@ -1,5 +1,8 @@
 
 	<!-- MAIN APP -->
+	<section class="footer_img">
+	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/footer.png" alt="check">
+	</section>
 
 	<section class="container_footer">
 		<div class="menu_secondary">

@@ -4,12 +4,10 @@ Template Name: career
 */
 ?>
 <?php get_header(); ?>
-<section class="career_one">
-    <div class="about_one_container">
-        <h1 class="about_one_container_title">Rejoignez notre communauté Data & Analytics, partagez notre rêve et nos ambitions.</h1>
-        <div class="about_one_container_p"><p>Vous êtes un(e) passionné(e), avez déjà goûté à l'univers Data & Analytics, connaissez ses technologies, imaginez son potentiel... Venez maintenant y évoluer pleinement et partager vos accomplissements !</p></div> 
+<section class="about_one text">
+        <h1 class="one_container_title">Rejoignez notre communauté Data & Analytics, partagez notre rêve et nos ambitions.</h1>
+        <p class="one_container_text">Vous êtes un(e) passionné(e), avez déjà goûté à l'univers Data & Analytics, connaissez ses technologies, imaginez son potentiel... Venez maintenant y évoluer pleinement et partager vos accomplissements !</p>
         <img  class="nasa" src="<?php echo get_bloginfo('template_url') ?>/assets/images/nasa.jpg" alt="logo">
-    </div>
 </section>
 
 <section class="career_two">
@@ -99,7 +97,7 @@ Template Name: career
             </div>
             <div class="career_postes_cont_boxes_bottom">
                 <p>BRUXELLES</p>
-                <h1>Consultant Tableau</h1>
+                <h1 class="career-text">Consultant Tableau</h1>
             </div>
         </div>
  
@@ -110,7 +108,7 @@ Template Name: career
             </div>
             <div class="career_postes_cont_boxes_bottom">
                 <p>PARIS</p>
-                <h1>Consultant Data Viz expérimenté</h1>
+                <h1 class="career-text">Consultant Data Viz expérimenté</h1>
             </div>
         </div>
   
@@ -121,7 +119,7 @@ Template Name: career
             </div>
             <div class="career_postes_cont_boxes_bottom">
                 <p>SINGAPOUR</p>
-                <h1>Data scientist</h1>
+                <h1 class="career-text">Data scientist</h1>
             </div>
         </div>
     </div>

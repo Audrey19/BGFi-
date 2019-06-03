@@ -1,0 +1,8 @@
+@mixin gradiant {
+    background:$secondaryColor;
+    background: radial-gradient(ellipse at center, $secondaryColor 0%, $secondaryColorGradiant 100%);
+    background-size: 300% 300%;
+    animation: bg-animate 7s ease infinite;
+    background-attachment: fixed;
+}
+

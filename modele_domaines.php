@@ -18,10 +18,11 @@ Template Name: domaines
 
 <section class="toggle">
 <div class="toggle_left">
-    <div class="box data-management" data-domaine="data-management">Data Management</div>
+    <!--<div class="box data-management" data-domaine="data-management">Data Management</div>
     <div class="box data-engineering" data-domaine="data-engineering">Data Engineering</div>
     <div class="box advanced-analytics" data-domaine="advanced-analytics">Advanced Analytics</div>
-    <div class="box vertical-solutions" data-domaine="vertical-solutions">Vertical Solutions</div>
+    <div class="box vertical-solutions" data-domaine="vertical-solutions">Vertical Solutions</div>-->
+    <img  class="kenburns-top " src="<?php echo get_bloginfo('template_url') ?>/assets/images/bgfi.svg" alt="logo">
 </div>
 
 <div class="toggle_right">

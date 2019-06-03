@@ -14,11 +14,14 @@
 /* Library */
 @import "library/slick";
 
+/* Mixin */
+@import "tools/mixin";
 
 /* Modules */
 @import "modules/header";
 @import "modules/footer";
 @import "modules/buttons";
+@import "modules/burger";
 
 
 
@@ -30,6 +33,8 @@
 @import "layouts/data-services";
 @import "layouts/partners";
 @import "layouts/career";
-
+@import "layouts/contact";
+@import "layouts/blog-articles";
+@import "layouts/solutions";
 /* Vendor */
 @import "vendors/outdatedbrowser";

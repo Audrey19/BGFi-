@@ -11,45 +11,41 @@
 
 
 .about_one{
-    background-image: linear-gradient(to right, #12131b, #171b2c, #1b233e, #1f2b51, #213464, #213464, #213464, #213464, #1f2b51, #1b233e, #171b2c, #12131b),;
-    width:100%;
-    position: relative;
+    width: 100%;
+    height: 65vh;
     overflow: hidden;
-    height: 70vh; 
-    z-index: -5;
-    @include responsive(tablet){
-        height: 80vh;
-    } 
-    .about_one_container{
-            width: 80%;
-            margin: auto;
+    @include gradiant(); 
         .one_container_title{
-            color: white;
-            font-family: $secondryFont;
-            font-size: 30px;
-            padding-top: 50px; 
-            text-align: center;
-            @include responsive(tablet){
-                font-size: 48px;
-                padding-top: 150px; 
-                text-align: left;
-            }
-        }
-        .nasa{
-            overflow: hidden;
-            z-index: -3;
-           -webkit-animation: kenburns-top 160s ease-out both;
-           animation: kenburns-top 160s ease-out both;
-           @include responsive(tablet){
-            top:-150px;
             position: absolute;
-            margin: auto;
-            width: 90%;
-            left:5%;
+            z-index: 5;
+            width:90%;
+            left:50%;
+            top:35%;
+            max-width: 1180px;
+            transform: translate(-50%, -50%);
+            font-size:3rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: $white;
+            font-size: 32px;
+            font-family: $secondryFont;
+            @include responsive(tablet){
+                font-size: 42px;
+                line-height: 3.5rem;
+                top:37%;
             }
+            }
+        .nasa{
+            position: relative;
+            z-index:1;
+            display: block;
+            object-fit: cover;
+            width:100%;
+            height: 100%;
+            opacity: 0.5;
+            }
+        
         }
-    }
-}
 
 .about_two{
     width: 90%;
@@ -76,7 +72,7 @@
             font-weight: bolder;
         }
         @include responsive(tablet){
-            width: 20%;
+            width: 40%;
         }
     }
  
@@ -134,6 +130,73 @@
       
     }
 }
+
+.variable-width{
+    margin-left: 120px;
+    margin-bottom: 120px;
+.slick_variable_box{
+    box-shadow: 3px 3px 15px $light-grey;
+    height: 500px;
+    margin:30px 50px;
+    position: relative;
+    background-color: $primaryColor;
+    p{
+       color: $white;
+        font-size: 15px;
+        font-family: $secondryFont;
+        font-weight: bold;
+        line-height: 25px;
+        padding: 20px 40px;
+    }
+    h1{
+        color: $pink;
+        font-size: 24px;
+        font-family: $primaryFont;
+        padding:0 20px;
+        line-height: 25px;
+        font-weight: 900;
+        padding-top: 100px;
+    }
+    h3{
+        color: $white;
+        font-family: $secondryFont;
+        opacity:0.2;
+        font-size: 100px;
+        position: absolute;
+        top:-67px;
+        left:-20px;
+    }
+}
+&:after{
+    content:'';
+    display: block;
+    width:20vw;
+    height: 100%;
+    position: absolute;
+    right:0;
+    top:0;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+}
+
+button.slick-next{
+    z-index: 10;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    padding: 30px;
+    border:none;
+    background-color: $pink;
+    color: $white;
+    background-image: url(assets/images/arrow-right-white.png)
+}
+
+button.slick-prev{
+  opacity: 0;
+}
+
+
+
 
 
 .about_five{
@@ -207,7 +270,6 @@
 
 .about_six{
     width:100%;
-    margin-bottom: 200px;
     @include responsive(tablet){
         margin-top: 150px;
     }
@@ -216,7 +278,7 @@
         margin: 60px auto;
         text-align: center;
         @include responsive(tablet){
-            width:50%;
+            width:70%;
         }
         p{
             font-size: 16px;

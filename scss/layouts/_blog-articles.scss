@@ -1,0 +1,152 @@
+
+.banner{
+    position: relative;
+}
+
+.data_menu{
+    background-color: $primaryColor;
+    width: 100%;
+    padding: 20px 0;
+    .menu-sub-menu-blog-container{
+        margin: auto;
+        width:30%;
+        .menu{
+            margin: 0;
+            list-style-type: none;
+            padding: 0;
+            @include responsive(tablet){
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .current_page_item {
+                a{
+                    color:$pink;
+                }
+            }
+            #menu-item-82{
+                @include responsive(tablet){
+                    border-right: 1px solid $secondaryColor;
+                } 
+            }
+            #menu-item-81{
+                @include responsive(tablet){
+                    border-right: none;
+                    padding: 8px 0;
+                } 
+            }
+            li{
+                flex-basis: 100%;
+                text-align: center;
+            }
+            a{
+                    color:$white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-family: $secondryFont;
+                    font-weight: bold;
+                }
+        
+        }
+    }
+}
+
+
+    .search-form{
+         .search-submit{
+             background-color: $pink;
+             border: none;
+             line-height: 3rem;
+             padding: 0 30px;
+         }
+         .search-field{
+            width: 500px;
+            border: none;
+            line-height: 3rem;
+            margin-right: 10px;
+            padding: 0 10px;
+         }
+    }
+
+    .case_study{
+        width:70%;
+        margin:60px auto;
+        
+        @include responsive(tablet){
+           display:flex;
+           flex-direction: row;
+        } 
+        .case_study_left{
+            width: 50%;
+            img{
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .case_study_right{
+            padding: 30px 10px 80px 50px;
+            width: 50%;
+            box-shadow: 7px 7px 15px $light-grey;
+            h3{
+                font-size: 11px;
+                color: $grey;
+                line-height: 30px;
+                font-family: $secondryFont;
+            }
+            h1{
+                font-size: 32px;
+                color: $pink;
+                line-height: 40px;
+                font-family: $secondryFont;
+            }
+            p{
+                font-size: 12px;
+                color: $primaryColor;
+                line-height: 25px;
+                font-family: $secondryFont;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+.email-tab{
+    text-align: center;
+    width:50%;
+    margin:120px auto;
+    button{
+        color:$white;
+        font-size: 13px;
+        font-family: $secondryFont;
+        font-weight: bold;
+    }
+   .search-field-mail{
+        background-color: $light-grey;
+        width: 200px;
+        border: none;
+        line-height: 3rem;
+        margin-right: 10px;
+        padding: 0 10px;
+    }
+    p{
+        font-size: 15px;
+        color:$primaryColor;
+        font-weight: bold;
+        text-align: center;
+        font-family: $primaryFont;
+    }
+}
+
+.articles{
+    margin-bottom: 60px;
+    .align{
+        text-align: center;
+        .news-text{
+            color: $pink;
+            font-size: 24px;
+            font-family: $secondryFont;
+            margin: 30px 0;
+        }
+    }
+}
