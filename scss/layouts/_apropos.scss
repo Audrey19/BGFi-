@@ -140,7 +140,7 @@
     margin:30px 50px;
     position: relative;
     background-color: $primaryColor;
-    p{
+    .text-carousel{
        color: $white;
         font-size: 15px;
         font-family: $secondryFont;
@@ -235,7 +235,7 @@ button.slick-prev{
                 margin-bottom: 0;
                 margin-top: 40px;
             }
-            p{
+            .text-equipe{
                 font-size: 15px;
                 font-family: $secondryFont;
                 color:$grey; 

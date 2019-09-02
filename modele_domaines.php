@@ -6,8 +6,8 @@ Template Name: domaines
 <?php get_header(); ?>
 <section class="bis">
     <div class="one_container_title">
-        <h1 class="title_data">Data & Analytics</h1>
-        <p>La transformation digitale se mène par la donnée. De la compréhension de vos données jusqu'aux utilisateurs finaux. Des plateformes analytiques traditionnelles et modernes à l'analyse en libre service et la Data Science. Nous vous guidons dans la définitions et l'implémentation de votre Data-driven strategy.</p>
+        <h1 class="title_data"><?php the_field('FirstTitle-domain'); ?></h1>
+        <div class="text-data"><?php the_field('textarea-domain'); ?></div>
         <img  class="kenburns-top " src="<?php echo get_bloginfo('template_url') ?>/assets/images/Asset1.svg" alt="logo">
     </div>
 </section>
@@ -26,9 +26,11 @@ Template Name: domaines
 </div>
 
 <div class="toggle_right">
+<?php
+    while ( have_rows('repeteur-toggle') ) : the_row(); ?>
     <div class="container_toggle">
         <div class="domain data-management" data-domaine="data-management">
-            <p>1° Data Management</p>   
+            <p><?php the_sub_field('title-toggle'); ?></p>   
             <img class="arrow-close" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow_down.png" alt="arrow">
             <img class="arrow-open" src="<?php echo get_bloginfo('template_url') ?>/assets/images/arrow-right-white.png" alt="arrow">
         </div>
@@ -48,6 +50,8 @@ Template Name: domaines
             <a href="">DECOUVRIR CE DOMAIN</a>
         </div>
      </div>
+    <?php endwhile;?> 
+
      <div class="container_toggle">
         <div class="domain data-engineering" data-domaine="data-engineering">
             <p>2° Data Engineering</p>   
@@ -124,7 +128,7 @@ Template Name: domaines
 
 <section class="projet">
     <div class="projet_container">
-        <h1>Prêt à lancer votre projet?</h1>
+        <h1><?php the_field('title-button'); ?></h1>
         <button class="btn">Contactez-nous</button>
     </div>
 </section>

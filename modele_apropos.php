@@ -6,152 +6,82 @@ Template Name: a-propos
 <?php get_header(); ?>
 
 <section class="about_one">
-        <h1 class="one_container_title">BGFI : Un partenaire de confiance pour vous accompagner dans la valorisation de votre principal "asset" : la donnée.</h1>
+        <h1 class="one_container_title"><?php the_field('title_apropos'); ?></h1>
         <img  class="nasa" src="<?php echo get_bloginfo('template_url') ?>/assets/images/nasa.jpg" alt="logo">
 </section>
 
 <section class="about_two">
+<?php
+    while ( have_rows('repeteur_apropos') ) : the_row(); ?>
+        
         <div class="about_two_container_box">
-            <h1>200</h1>
-            <p>Collaborateurs</p>
+            <h1><?php the_sub_field('number'); ?></h1>
+            <p><?php the_sub_field('text'); ?></p>
         </div>
-        <div class="about_two_container_box">
-            <h1>4</h1>
-            <p>Pays</p>
-        </div>
-        <div class="about_two_container_box">
-            <h1>4</h1>
-            <p>Domaines d'intervention</p>
-        </div>
+<?php endwhile;?>   
+
 </section>
 
 <section class="about_three">
-    <h1>Nos valeurs</h1>
+    <h1><?php the_field('title-two'); ?></h1>
+
+    <?php
+    while ( have_rows('repeteur_apropos_two') ) : the_row(); ?>
     <div class="about_three_container">
         <div class="about_three_container_image">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/tunnel.png" alt="tunnel">
+        <?php 
+            $imagecard = get_sub_field('image');
+            if( !empty($imagecard) ): ?>
+                <img src="<?php echo $imagecard['url']; ?>" alt="<?php echo $imagecard['alt']; ?>" />
+        <?php endif; ?>
         </div>
         <div class="about_three_container_content">
-            <h1>Savoir-Faire</h1>
-            <p>C'est entre conseil en Analytics et implémentation de solutions à valeur ajoutée que BGFi se positionne. Nous accompagnons jour après jour, les entreprises et les organisations dans leur défi quotidien qu'est la création de valeur à partir de la donnée. Forts de cette expérience nous avons développé un savoir-faire reconnu par nos clients pour les accompagner dans chacune des phases de leurs projets (du conseil stratégique à la mise en oeuvre). Dans un monde en évolution constante nous nous renouvelons sans cesse et exerçons notre créativité pour proposer des approches et solutions innovantes.</p>
+            <h1><?php the_sub_field('title'); ?></h1>
+            <p><?php the_sub_field('textarea'); ?></p>
         </div>
     </div>
-    <div class="about_three_container">
-        <div class="about_three_container_content">
-            <h1>Passion</h1>
-            <p>Le regard résolument tourné vers l'avenir, BGFi est animé par une culture de la donnée et des nouvelles applications qui en découlent. Cette culture se traduit par une passion profonde et commune à l'ensemble de nos collaborateurs. Une passion pour les solutions novatrices que nous développons, une passion pour les technologies de pointe que nous manipulons et une passion pour l'innovation, au delà des frontières de la donnée.</p>
-        </div>
-        <div class="about_three_container_image">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/workshop.png" alt="workshop">
-        </div>
-    </div>
-    <div class="about_three_container">
-        <div class="about_three_container_image">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/tunnel.png" alt="tunnel">
-        </div>
-        <div class="about_three_container_content">
-            <h1>Excellence</h1>
-            <p>Convaincus que nos clients, nos collaborateurs et nos partenaires sont en droit d'exiger le meilleur de nous, BGFi adopte une véritable culture de l'excellence. Chacune de nos interventions doit apporter pleine satisfaction à nos clients. Chacun de nos partenariats doit être conçu pour durer. Chacun.e de nos collaborateurs.trices doit évoluer à nos côtés. L'excellence est pour nous le moyen d'apporter des gages de qualité à l'ensemble des parties prenantes de l'éco-système que nous construisons.</p>
-        </div>
-    </div>
-    <div class="about_three_container">
-        <div class="about_three_container_content">
-            <h1>Collaboration</h1>
-            <p>Nous croyons que la collaboration doit être l'essence même de toute entreprise moderne. Notre approche collaborative se traduit par une coopération étroite entre nos salariés en vue d'atteindre un objectif commun et de partager la connaissance. Nous favorisons l'esprit d'équipe et l'autonomie plutôt qu'un système plus traditionnel régit par le contrôle. BGFi met pour ainsi dire la force d'un collectif au service de l'accompagnement de ses clients et de la communauté Data & Analytics.</p>
-        </div>
-        <div class="about_three_container_image">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/workshop.png" alt="workshop">
-        </div>
-    </div>
-    <div class="about_three_container">
-        <div class="about_three_container_image">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/tunnel.png" alt="tunnel">
-        </div>
-        <div class="about_three_container_content">
-            <h1>Engagement</h1>
-            <p>Persuadés que la donnée est au coeur de la transformation digitale et qu'elle doit être considérée comme un actif de l'entreprise, BGFi s'engage à accompagner les organisations dans cette transformation nécessaire. Nous nous engageons également pour rendre accessible notre savoir-faire au sein même de notre éco-système ou pour des projets socialement responsables. Après tout, c'est l'engagement de tous qui transformera positivement le monde de demain.</p>
-        </div>
-    </div>
+    <?php endwhile;?> 
+
 </section>
 
 <section class="about_four">
-    <h1 class="first_title">L’histoire BGFI</h1>
+    <h1 class="first_title"><?php the_field('title-histoire'); ?></h1>
     <div class="variable-width">
-        <div class="slick_variable_box">
-            <h3>2002</h3>
-            <h1>Création de BGFI en France</h1>
-            <p>Aux balbutiements de la Business Intelligence, les fondateurs de BGFi décèlent un formidable potentiel à accompagner les entreprises françaises dans leurs problématiques décisionnelles. Passionnés par la donnée et l'Intelligence Décisionnelle, ils partagent la volonté de créer avant tout une aventure humaine : BGFi est né.</p>
-        </div>
-        <div class="slick_variable_box">
-            <h3>2010</h3>
-            <h1>Ouverture de BGFI en Tunisie</h1>
-            <p>Toujours soucieux de fournir des services de qualité à ses clients et de construire avec eux une relation pérenne, BGFi fonde BGFi Engineering composée d'ingénieurs spécialisés et passionnés. La vocation principale de cette entité est de maintenir puis de faire évoluer les applications délivrées à l'issue de nos projets.</p>
-        </div>
-        <div class="slick_variable_box">
-            <h3>2016</h3>
-            <h1>Alliance avec la Positive Thinking Company</h1>
-            <p>Pour assurer sa croissance et adresser de nouveaux marchés, BGFi se rapproche de la Positive Thinking Company (PTC) pour former un partenariat stratégique. L'entreprise peut alors s'appuyer sur une assise financière solide pour innover, diversifier son portefeuille de services et enfin s'ouvrir sur le marché européen.</p>
-        </div>
-        <div class="slick_variable_box">
-            <h3>2002</h3>
-            <h1>Un département dédié à l'évolution</h1>
-            <p>Parce que nous croyons que vos rêves peuvent évoluer et parce que vos aspirations vous sont propres, nous avons créé une équipe dédiée à votre évolution. Elle vous guidera, vous conseillera et suivra vos progrès pour permettre un parcours professionnel vous correspondant, et connecté aux transformations du monde Data & Analytics.</p>
-        </div>
+        <?php
+        while ( have_rows('caroussel') ) : the_row(); ?>
+            <div class="slick_variable_box">
+                <h3><?php the_sub_field('date'); ?></h3>
+                <h1><?php the_sub_field('title-caroussel'); ?></h1>
+                <div class="text-carousel"><?php the_sub_field('text-carousel'); ?></div>
+            </div>
+        <?php endwhile;?> 
     </div> 
-   
 </section>
 
 
 <section class="about_five">
-    <h1 class="first_title">Notre équipe</h1>
+    <h1 class="first_title"><?php the_field('title-equipe'); ?></h1>
         <div class="about_five_box">
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/leo.png" alt="tunnel">
-                <h1>Jennie Atkins</h1>
-                <p>Project Manager</p>
-                <h2>VIETNAM</h2>
-            </div>
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/julie.png" alt="tunnel">
-                <h1>Julia Rowe</h1>
-                <p>Project Manager</p>
-                <h2>SAMOA</h2>
-            </div>
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/albert.png" alt="tunnel">
-                <h1>Leo Fox</h1>
-                <p>Project Manager</p>
-                <h2>SUDAN</h2>
-            </div>
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/genevieve.png" alt="tunnel">
-                <h1>Genevieve Holland</h1>
-                <p>Project Manager</p>
-                <h2>ESTONIA</h2>
-            </div>
-
+    
+    <?php $increment = 0;?>
+       <?php while ( have_rows('boxes-equipe') ) : the_row();  ?>
+         <?php if($increment == 4) {?>
             <div class="resonsive_non"></div>
-
             <div class="resonsive_non"></div>
+        <?php }?>
+            <div class="about_five_box_team">
+                <?php 
+                $image = get_sub_field('photo');
+                if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                <?php endif; ?>
+                <h1><?php the_sub_field('name'); ?></h1>
+                <div class="text-equipe"><?php the_sub_field('status'); ?></div>
+                <h2><?php the_sub_field('country'); ?></h2>
+            </div>
+        <?php $increment++?>
+        <?php endwhile;?> 
 
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/leo.png" alt="tunnel">
-                <h1>Jennie Atkins</h1>
-                <p>Project Manager</p>
-                <h2>SAMOA</h2>
-            </div>
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/julie.png" alt="tunnel">
-                <h1>Julia Rowe</h1>
-                <p>Project Manager</p>
-                <h2>VIETNAM</h2>
-            </div>
-            <div class="about_five_box_team">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/albert.png" alt="tunnel">
-                <h1>Leo Fox</h1>
-                <p>Project Manager</p>
-                <h2>SUDAN</h2>
-            </div>
             <div class="about_five_box_next">
                 <h1>Envie de rejoindre l’équipe ?</h1>
             </div>
@@ -160,11 +90,13 @@ Template Name: a-propos
 
 <section class="about_six">
     <div class="about_six_content">
-        <h1 class= "first_title">BGFI, une Positive Thinking Company</h1>
-        <p>Chez BGFi, nous valorisons le concept de partage de la connaissance, c'est pourquoi nous avons construit une relation forte avec la Positive Thinking Company : un groupe présent dans 9 pays, avec plus de 24 bureaux et 2000 collaborateurs engagés dans le monde entier. Toutes les entités de la Positive Thinking Company partagent le même rêve : construire une relation transparente, basée sur la confiance et l'innovation. Nous croyons à la performance collaborative et à la pensée positive en fournissant des solutions technologiques innovantes avec des collaborateurs engagés. Ensemble, nous rêvons, osons et collaborons !</p>
+        <h1 class= "first_title"><?php the_field('title-video'); ?></h1>
+        <p><?php the_field('textarea-video'); ?></p>
         <button class="btn">Voir plus</button>
     </div>
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+    <div class="embed-container">
+	<?php the_field('video'); ?>
+</div>
 </section>
 
 

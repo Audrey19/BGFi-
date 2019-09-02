@@ -14,7 +14,7 @@ const sass = require("gulp-sass");
 // BrowserSync
 function browserSync(done) {
     browsersync.init({
-        proxy: "http://localhost:81/bgfi" //url of site
+        proxy: "http://localhost/bgfi" //url of site
     });
     done();
 }

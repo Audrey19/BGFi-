@@ -2021,7 +2021,7 @@ header {
     margin: 30px 50px;
     position: relative;
     background-color: #2A3865; }
-    .variable-width .slick_variable_box p {
+    .variable-width .slick_variable_box .text-carousel {
       color: #FFF;
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
@@ -2109,7 +2109,7 @@ button.slick-prev {
     font-family: "Paytone One", sans-serif;
     margin-bottom: 0;
     margin-top: 40px; }
-  .about_five .about_five_box .about_five_box_team p {
+  .about_five .about_five_box .about_five_box_team .text-equipe {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     color: #B6B6B6;
@@ -2204,12 +2204,13 @@ button.slick-prev {
       @media only screen and (min-width: 768px) {
         .bis .one_container_title h1 {
           font-size: 72px; } }
-    .bis .one_container_title p {
+    .bis .one_container_title .text-data {
       font-size: 20px;
       color: #FFF;
       opacity: 0.7;
       line-height: 30px;
-      font-family: "Montserrat", sans-serif; }
+      font-family: "Montserrat", sans-serif;
+      z-index: 5; }
 
 .data_menu {
   background-color: #2A3865;

@@ -41,12 +41,13 @@
             font-size: 72px;
             }
         }
-        p{
+        .text-data{
             font-size: 20px;
             color: $white;
             opacity: 0.7;
             line-height: 30px;
             font-family: $secondryFont;
+            z-index: 5;
         }
 
     }
